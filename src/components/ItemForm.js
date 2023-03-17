@@ -1,9 +1,9 @@
 import React from "react";
 import { v4 as uuid } from "uuid";
 
-function ItemForm({ handleForm, handleSearchItemForm, searchItemForm, handleSelectItemForm, selectItemForm }) {
+function ItemForm({ onItemFormSubmit, handleSearchItemForm, searchItemForm, handleSelectItemForm, selectItemForm }) {
   return (
-    <form className="NewItem" onSubmit={ handleForm }>
+    <form className="NewItem" onSubmit={ onItemFormSubmit }>
       <label>
         Name:
         <input type="text" name="searchItemForm" onChange={ handleSearchItemForm } value={ searchItemForm } />
